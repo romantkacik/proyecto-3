@@ -1,16 +1,123 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
+  color: var(--rtc-color-text--);
 }
 
+:root {
+  /*---COLORS---*/
 
+  --rtc-color-1: #fff;
+  --rtc-color-2: #bebebe;
+  --rtc-color-text: #60a0cb;
+  --rtc-color-4: #dee8e785;
+
+  /*---SPACING---*/
+
+  --rtc-margin-xs: 5px;
+  --rtc-margin-s: 10px;
+  --rtc-margin-m: 20px;
+  --rtc-margin-l: 30px;
+  --rtc-margin-xl: 40px;
+
+  --rtc-padding-xs: 5px;
+  --rtc-padding-s: 10px;
+  --rtc-padding-m: 20px;
+  --rtc-padding-l: 30px;
+  --rtc-padding-xl: 40px;
+
+  --rtc-gap-xs: 5px;
+  --rtc-gap-s: 10px;
+  --rtc-gap-m: 20px;
+  --rtc-gap-l: 30px;
+  --rtc-pgap-xl: 40px;
+
+  /*---BORDER-RADIUS---*/
+
+  --rtc-border--: 1px solid #d9d9d9;
+  --rtc-color-text--: var(--rtc-color-4);
+}
+
+body {
+  height: 100vh;
+}
+
+/* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */ /* HEADER */
+
+#headerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--rtc-color-4);
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10%;
+  padding-top: 30px;
+}
+.logo {
+  width: 140px;
+  margin-left: var(--rtc-margin-l);
+  border: solid 2px black;
+  border-radius: 90px;
+}
+
+.navbar {
+  display: flex;
+  padding-right: var(--rtc-padding-xl);
+  gap: var(--rtc-pgap-xl);
+}
+.navbar > a {
+  color: var(--rtc-color-text);
+  font-size: 24px;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */ /* MAIN */
+
+#mainContainer {
+  width: 100%;
+  height: 80%;
+  background-color: var(--rtc-color-4);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imgUser {
+  width: 40%;
+  height: 90%;
+  border: solid 2px black;
+  border-radius: 500px;
+}
+.userInfo {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 100px;
+}
+.userName {
+  font-size: 60px;
+  color: var(--rtc-color-text);
+  font-family: 'Times New Roman', Times, serif;
+}
+.userDescription,
+.userSkills {
+  color: var(--rtc-color-text);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* FOOTER */
