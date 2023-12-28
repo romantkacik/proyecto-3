@@ -51,3 +51,33 @@ userInfo.appendChild(userDescription)
 userInfo.appendChild(userSkills)
 main.appendChild(imgUser)
 main.appendChild(userInfo)
+
+// FOOTER--/// FOOTER--/// FOOTER--/// FOOTER--/// FOOTER--/
+
+const footer = document.querySelector('#footerContainer')
+
+const logosFooter = document.createElement('div')
+logosFooter.className = 'logosFooter'
+
+const logoLinkedin = document.createElement('img')
+logoLinkedin.className = 'linkedin'
+logoLinkedin.src = './assets/linkedin-logo-linkedin-symbol-linkedin-icon-free-free-vector.jpg'
+
+const logoGithub = document.createElement('img')
+logoGithub.className = 'github'
+logoGithub.src = './assets/25231.png'
+
+logosFooter.appendChild(logoLinkedin)
+logosFooter.appendChild(logoGithub)
+footer.appendChild(logosFooter)
+
+const linkLinkedin = document.createElement('a')
+linkLinkedin.href = 'https://www.linkedin.com/in/rom%C3%A1n-luciano-tkacik-b81881203/'
+linkLinkedin.appendChild(logoLinkedin)
+
+const linkGithub = document.createElement('a')
+linkGithub.href = 'https://github.com/romantkacik'
+linkGithub.appendChild(logoGithub)
+
+logosFooter.appendChild(linkLinkedin)
+logosFooter.appendChild(linkGithub)
